@@ -1,0 +1,10 @@
+%grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 5fr;
+}
+
+%text {
+  color: $red;
+  font-size: 20px;
+  font-family: Nunito;
+}

@@ -8,4 +8,63 @@
 
 body {
   font-family: "PT Serif", serif;
+  background-color: #f0efeb;
+  color: $black;
+  padding: 30px 40px;
+  line-height: 1.5;
+}
+
+header {
+  font-size: 40px;
+  letter-spacing: 1px;
+  margin-bottom: 90px;
+}
+
+.works {
+  margin-bottom: 60px;
+  .works__header {
+    @extend %grid;
+    padding-bottom: 10px;
+    span {
+      @extend %text;
+    }
+  }
+  .works__list {
+    .works__work {
+      @extend %grid;
+      cursor: pointer;
+      font-size: 20px;
+      border-top: 1px solid $black;
+      padding: 20px 0;
+
+      &:hover {
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.cv {
+  margin-bottom: 90px;
+}
+
+.cv,
+.about {
+  font-size: 30px;
+  span {
+    @extend %text;
+  }
+}
+
+a {
+  color: $red;
+  text-decoration: none;
+  margin: 0 5px;
+  &:hover {
+    font-style: italic;
+  }
+}
+
+.about {
+  margin-bottom: 90px;
 }
